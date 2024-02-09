@@ -52,6 +52,10 @@ spec:
           - /var/lib/mailpit/mailpit.db
           - --webroot
           - {{ .Values.mailpit.webroot }}
+          {{- if .Values.mailpit.spamassassin }}
+          - --enable-spamassassin
+          - {{ .Values.mailpit.spamassassin }}
+          {{- end }}
           {{- if .Values.mailpit.ui.authFile.enabled }}
           - --ui-auth-file
           - /etc/mailpit/ui.htpasswd

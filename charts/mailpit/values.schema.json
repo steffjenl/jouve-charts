@@ -139,6 +139,11 @@
                     "description": "Set the webroot for web UI & API",
                     "default": "/"
                 },
+                "spamassassin": {
+                    "type": "string",
+                    "description": "Set the spamassassin server",
+                    "default": "/"
+                },
                 "ui": {
                     "type": "object",
                     "properties": {

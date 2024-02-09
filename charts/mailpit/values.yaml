@@ -34,7 +34,7 @@ global:
 image:
   registry: docker.io
   repository: axllent/mailpit
-  tag: v1.13.1
+  tag: v1.13.3
   digest: ""
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -145,6 +145,7 @@ tolerations: []
 mailpit:
   ## @param mailpit.webroot Set the webroot for web UI & API
   webroot: /
+  spamassassin: ""
   ui:
     ## @param mailpit.ui.authFile.enabled Adding basic authentication to web UI
     ## @param mailpit.ui.authFile.htpasswd htpasswd content
